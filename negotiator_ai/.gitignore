@@ -1,0 +1,130 @@
+# =============================================================================
+# NegotiatorAI — .gitignore
+# =============================================================================
+
+# ── Secrets & credentials ─────────────────────────────────────────────────────
+.env
+.env.local
+.env.production
+.streamlit/secrets.toml
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+pip-wheel-metadata/
+*.whl
+
+# Pytest / testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Type checkers
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pyright/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# ── macOS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ── Data & generated files ────────────────────────────────────────────────────
+# ChromaDB vector store (rebuild with build_kb.py)
+chroma_db/
+
+# SQLite negotiation history database
+memory/negotiations.db
+*.db
+*.sqlite
+*.sqlite3
+
+# Exported PDFs
+*.pdf
+exports/
+
+# Evaluation output (raw results, charts, CSVs)
+evaluation/results/raw/
+evaluation/results/charts/
+evaluation/results/*.json
+evaluation/results/*.csv
+
+# ── Streamlit ─────────────────────────────────────────────────────────────────
+# Keep config.toml (theme) but never commit secrets
+.streamlit/secrets.toml
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+*.out
+
+# ── IDEs & editors ────────────────────────────────────────────────────────────
+# VS Code / Cursor / Kiro
+.vscode/
+.kiro/
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+.#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ── OS generated ──────────────────────────────────────────────────────────────
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ── HuggingFace model cache (large, auto-downloaded) ─────────────────────────
+# Uncomment if you accidentally stage the HF cache
+# .cache/
+
+# ── Temporary files ───────────────────────────────────────────────────────────
+tmp/
+temp/
+*.tmp
+*.bak
+*.orig
+*.rej

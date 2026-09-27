@@ -1,0 +1,44 @@
+# Core LLM / Orchestration
+langchain>=0.3.7
+langchain-core>=0.3.15
+langchain-openai>=0.2.5          # also used for OpenRouter (OpenAI-compatible API)
+langchain-anthropic>=0.2.3       # direct Anthropic (optional, OpenRouter covers this)
+langchain-groq>=0.2.1            # direct Groq (optional, OpenRouter covers this)
+langchain-community>=0.3.7
+langgraph>=0.2.45
+
+# Vector Store
+chromadb>=0.5.15
+langchain-chroma>=0.1.4
+
+# Local Embeddings (replaces OpenAI embeddings — no API key needed)
+sentence-transformers>=3.0.0
+langchain-huggingface>=0.1.0
+
+# Web Search (optional — for RAG fallback when KB confidence is low)
+tavily-python>=0.5.0
+
+# Persistent Memory
+# sqlite3 is stdlib — no extra package needed
+
+# LLM provider SDKs
+openai>=1.52.0                   # required for OpenRouter compatibility (ChatOpenAI base)
+anthropic>=0.36.0                # direct Anthropic only
+groq>=0.11.0                     # direct Groq only
+
+# UI
+streamlit>=1.39.0
+
+# PDF Export
+fpdf2>=2.8.1
+
+# Evaluation / data
+pandas>=2.2.3
+matplotlib>=3.9.2
+numpy>=1.26.4
+scipy>=1.14.1
+
+# Utilities
+python-dotenv>=1.0.1
+pydantic>=2.9.2
+tiktoken>=0.8.0

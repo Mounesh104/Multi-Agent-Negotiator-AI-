@@ -1,0 +1,7 @@
+[theme]
+# Clean light professional theme
+primaryColor = "#1a1f2e"
+backgroundColor = "#f0f2f5"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#1a202c"
+font = "sans serif"
